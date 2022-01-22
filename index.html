@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Zolo Nguyễn</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-click">About</a></li>
+            <li><a href="#skills" class="nav-click">Skills</a></li>
+            <li><a href="#projects" class="nav-click">Projects</a></li>
+            <li><a href="#contact" class="nav-click">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bar" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero ection -->
+    <section class="hero" id="about">
+        <img src="./assets/images/wfh_1.svg" alt="zolo" loading="lazy" class="hero-img">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About me</h2>
+            <p class="bio-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam ducimus illo dolorem,
+                dignissimos sed? Dolorum nam earum quibusdam natus accusantium ex unde, maxime error sapiente
+                consequatur quis, sequi atque.
+            </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur laudantium temporibus eos qui
+            provident quae vel sapiente ea in inventore suscipit minus, ipsum beatae! Minima perferendis ex officia
+            quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur laudantium temporibus eos qui
+            provident quae vel sapiente ea in inventore suscipit minus, ipsum beatae! Minima perferendis ex officia
+            quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur laudantium temporibus eos qui
+            provident quae vel sapiente ea in inventore suscipit minus, ipsum beatae! Minima perferendis ex officia
+            quisquam!</p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="./assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="./assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="./assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card">
+            </div>
+            <div class="first-set animate__animated animate__pulse">
+                <img src="./assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="./assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="./assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="./assets/images/expenseTracker.png" alt="" class="project-pic">
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi iste
+                    eveniet at asperiores architecto sed expedita laudantium quia vitae, atque laboriosam quos fuga
+                    delectus itaque beatae cupiditate cumque aliquam!</p>
+                <a href="#" class="project-link">Check it out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="./assets/images/netflixClone.png" alt="" class="project-pic">
+                <h3 class="project-title">Netflix Clone</h3>
+                <p class="project-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi iste
+                    eveniet at asperiores architecto sed expedita laudantium quia vitae, atque laboriosam quos fuga
+                    delectus itaque beatae cupiditate cumque aliquam!</p>
+                <a href="#" class="project-link">Check it out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="./assets/images/greenyEarth.png" alt="" class="project-pic">
+                <h3 class="project-title">Greeny Earth</h3>
+                <p class="project-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi iste
+                    eveniet at asperiores architecto sed expedita laudantium quia vitae, atque laboriosam quos fuga
+                    delectus itaque beatae cupiditate cumque aliquam!</p>
+                <a href="#" class="project-link">Check it out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <div class="contact" id="contact">
+        <h2>Get in touch with me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" class="input-field" id="name" name="sender-name" placeholder="Enter your name" required> 
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" class="input-field" id="email" name="sender-email" placeholder="Enter your email" required> 
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="input-field" id="message" cols="60" rows="10" placeholder="Enter your message" required></textarea> 
+                    </div>
+                    <input type="submit" class="submit-btn" id="submit-btn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="#" target="_blank">
+            <img src="./assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon">
+        </a>
+        <a href="#" target="_blank">
+            <img src="./assets/icons/icons8-instagram.gif" alt="Instagam" loading="lazy" class="socicon">
+        </a>
+        <a href="#" target="_blank">
+            <img src="./assets/icons/icons8-linkedin-circled.gif" alt="LinkedIn" loading="lazy" class="socicon">
+        </a>
+        <a href="#" target="_blank">
+            <img src="./assets/icons/icons8-github.gif" alt="Github" loading="lazy" class="socicon">
+        </a>
+    </div>
+
+    <!-- Sroll to top -->
+    <i class="scroll-up" id="scroll-up">
+        <img src="./assets/icons/icons8-upward-arrow.gif" alt="scroll-up" class="socicon up-arrow">
+    </i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="#" target="_blank">Zolo</a>
+        </p>
+    </footer>
+    <!-- Website scripts -->
+    <script src="./assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
